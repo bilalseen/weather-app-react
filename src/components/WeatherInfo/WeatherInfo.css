@@ -1,0 +1,30 @@
+.weather-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.weather-temp {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.weather-location {
+  font-size: 50px;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 50px;
+}
+
+.weather-element {
+  display: flex;
+}
+
+.weather-data {
+  font-size: 20px;
+  margin-inline: 20px;
+}

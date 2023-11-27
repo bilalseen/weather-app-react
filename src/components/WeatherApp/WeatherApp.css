@@ -1,0 +1,8 @@
+.weatherapp-container {
+  width: 1080px;
+  height: auto;
+  padding: 40px;
+  background-color: rgba(61, 61, 145, 0.5);
+  opacity: 0.9;
+  border-radius: 20px;
+}
