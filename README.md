@@ -16,13 +16,30 @@ This project is a React application that allows users to view weather informatio
     cd weather-app
     ```
 
-3. Install dependencies:
+3. **Create API.js file:**
+    - Inside the `src` directory, create a file named `API.js`.
+    - Add the following content to `API.js`:
+
+    ```javascript
+    // API.js
+
+    const API = {
+      key: 'YOUR_OPENWEATHER_API_KEY',
+      base: 'https://api.openweathermap.org/data/2.5/'
+    };
+
+    export default API;
+    ```
+
+    Replace `'YOUR_OPENWEATHER_API_KEY'` with your actual OpenWeather API key.
+
+4. Install dependencies:
 
     ```bash
     npm install
     ```
 
-4. Start the application:
+5. Start the application:
 
     ```bash
     npm start
