@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { api } from "../../api";
+import { API } from "../../API.js";
 import "./WeatherApp.css";
 import { SearchBar } from "../SearchBar/SearchBar.jsx";
 import { WeatherImage } from "../WeatherImage/WeatherImage.jsx";
@@ -16,7 +16,7 @@ export const WeatherApp = (props) => {
 
   const getWeatherData = () => {
     if (search != "") {
-      fetch(`${api.base}weather?q=${search}&units=Metric&APPID=${api.key}`)
+      fetch(`${API.base}weather?q=${search}&units=Metric&APPID=${API.key}`)
         .then((response) => response.json())
         .then((data) => {
           setCity(search);

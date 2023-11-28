@@ -1,4 +1,4 @@
-export const api = {
-  key: "d0d49fbe682d449d6222a851b34eddc7",
-  base: "http://api.openweathermap.org/data/2.5/",
+export const API = {
+  key: "9fd2375802ce1d75a87caa7543a7a049",
+  base: "api.openweathermap.org/data/2.5/",
 };
