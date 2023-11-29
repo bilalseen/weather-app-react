@@ -20,7 +20,13 @@ export const WeatherApp = (props) => {
         const response = await fetch(
           `${API.base}weather?q=${search}&units=Metric&APPID=${API.key}`
         );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const data = await response.json();
+        console.log(data);
 
         setCity(search);
         setTemp(Math.floor(data.main.temp));
