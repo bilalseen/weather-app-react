@@ -26,7 +26,6 @@ export const WeatherApp = (props) => {
         }
 
         const data = await response.json();
-        console.log(data);
 
         setCity(search);
         setTemp(Math.floor(data.main.temp));
