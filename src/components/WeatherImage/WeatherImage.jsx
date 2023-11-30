@@ -60,7 +60,7 @@ export const WeatherImage = (props) => {
 
   return (
     <div className="weather-image-container">
-      <img src={weatherIcon} width={200} height={200} alt="weather image" />
+      <img src={weatherIcon} alt="weather image" className="weather-image" />
     </div>
   );
 };

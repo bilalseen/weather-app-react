@@ -12,8 +12,6 @@ export const WeatherInfo = (props) => {
         <div className="weather-element">
           <img
             src={humidityIcon}
-            width={50}
-            height={50}
             className="weather-icon"
             alt="humidity icon"
           />
@@ -23,13 +21,7 @@ export const WeatherInfo = (props) => {
           </div>
         </div>
         <div className="weather-element">
-          <img
-            src={windIcon}
-            width={50}
-            height={50}
-            className="weather-icon"
-            alt="wind icon"
-          />
+          <img src={windIcon} className="weather-icon" alt="wind icon" />
           <div className="weather-data">
             <div className="wind-speed">{props.wind}km/h</div>
             <div className="weather-text">Wind Speed</div>

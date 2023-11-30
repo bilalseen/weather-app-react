@@ -33,6 +33,7 @@ export const WeatherApp = (props) => {
         setHumidity(Math.floor(data.main.humidity));
         setWeather(data.weather[0].icon);
         setSearch("");
+        console.log(city, "/" + weather);
       } else {
         alert("Please enter city/town");
       }
