@@ -67,6 +67,8 @@ Main components used in the project:
 - React
 - OpenWeather API
 
+ You can try out the application live on this [Vercel](https://weather-app-bilalsen.vercel.app) Pages link.
+
 ## Contribution
 
 If you want to contribute to the project, please create an issue to discuss your changes before submitting a pull request.
