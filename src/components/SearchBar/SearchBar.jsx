@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 import search_icon from "../../assets/icons/search.png";
 
-export const SearchBar = ({ onChange, onClick, search }) => {
+export const SearchBar = ({ onChange, onClick, search, onKeyDown }) => {
   return (
     <div className="searchbar-container">
       <input
@@ -11,6 +11,7 @@ export const SearchBar = ({ onChange, onClick, search }) => {
         placeholder="Search City/Town"
         value={search || ""}
         onChange={onChange}
+        onKeyDown={onKeyDown}
       ></input>
 
       <img
