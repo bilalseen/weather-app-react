@@ -15,7 +15,6 @@ export const WeatherApp = (props) => {
   const [weather, setWeather] = useState(null);
 
   const getWeatherData = async (event) => {
-    console.log(event.key);
     if (event.key == "Enter" || event.target.className == "search-icon") {
       try {
         if (search !== "") {
